@@ -310,6 +310,7 @@ box-shadow: -1px -1px 22px 0px rgba(197,42,20,1)
 .todo-list li label.lnew{
   white-space: normal;
   margin-left: 0;
+  padding: 12px 60px 12px 15px;
 }
 
 
@@ -522,6 +523,14 @@ button, input[type="submit"] {
 
   .todo-list li input.edit-input{
       margin: 13px 0px 13px 29px;
+  }
+
+  header{
+      height: 77px;
+  }
+
+  .or-spacer-vertical .mask{
+    height: 77px;
   }
 
 

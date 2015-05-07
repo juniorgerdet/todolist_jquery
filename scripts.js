@@ -18,14 +18,14 @@ info = info || {};
 
     /* Eventos sobre elementos HTML */
 
-	$("#addnew").click(function (event) {
+    $("#addnew").click(function (event) {
         $(".linew").fadeIn("fast", 
             function() {
                 $("#input-task").focus();
                 foundShow();
             }
         );
-	})
+    })
 
 
     $("#tasksList").click(function (event) {
@@ -34,15 +34,15 @@ info = info || {};
     })
 
 
-	$("#input-task").blur(function (event) {
-		if(!this.value.trim()){
-			$(".linew").fadeOut("fast");
-		}
+    $("#input-task").blur(function (event) {
+        if(!this.value.trim()){
+            $(".linew").fadeOut("fast");
+        }
 
         foundShow();
-	})
+    })
 
-	$('#form').submit(function (e) {
+    $('#form').submit(function (e) {
         var taskName = this.elements[0];
         if(taskName.value){
             var Id = new Date().getTime();
@@ -58,8 +58,8 @@ info = info || {};
             // $(".linew").fadeOut("fast");
             taskName.value="";
         }
-		e.preventDefault();
-	});
+        e.preventDefault();
+    });
 
 
     // Acciones de CRUD de los Taks sobre la persistencia local (localStorage)
