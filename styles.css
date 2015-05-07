@@ -1,0 +1,568 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/*  */
+/**
+* @style       Estilos Principales
+* @media       screen
+* @version     1.0
+* @author      Junior Gerdet
+* @copyright   Junior Gerdet
+* @licensor    
+* @email juniorgerdet@gmail.com
+* @description Estilo Personalizado    
+*/
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Header */
+
+header{
+  height: 80px;
+}
+
+.wrap{
+  height: 100%;
+  background: url("https://s3.amazonaws.com/branded.me/gallery/business/14.jpg");
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+
+/* CONTENT
+-------------------------------------------------- */
+
+.content{
+  text-align: center;
+  bottom: 0; left: 0; top: 0; right: 0;
+  margin: auto;
+  position: absolute;
+  width: 60%;
+  height: 60%;
+}
+
+
+.navbar{
+  text-align: center;
+  -moz-animation-name: dropHeader;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 0.3s;
+
+    -webkit-animation-name: dropHeader;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 0.3s;
+
+    animation-name: dropHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.3s;
+}
+
+.navbar ul{
+  display: inline-block;
+  margin: 0px auto;
+  float: left;
+  width: 100%;
+  padding-left: 0;
+  max-height: 60px;
+}
+
+.vignette{
+  height: 40px;
+  position: absolute;
+  display: block;
+  width: 6px;
+  top: 10px;
+  border-left: dotted 2px #ddd;
+  border-right: dotted 2px #ddd;
+  left: 10px;
+}
+
+.navbar li:first-child,.navbar li:first-child a  {
+  -webkit-border-top-left-radius: 4px;
+-moz-border-radius-topleft: 4px;
+border-top-left-radius: 4px;
+}
+
+.navbar li:last-child,.navbar C  {
+-webkit-border-top-right-radius: 4px;
+-moz-border-radius-topright: 4px;
+border-top-right-radius: 4px;
+}
+
+.navbar li:last-child a>div{
+  visibility: hidden;
+}
+
+.full-icon{
+  font-size: 3.2em;
+  padding-top: 8px;
+}
+
+.navbar li {
+  width: 25%;
+  float: left;
+  list-style: none;
+  text-align: center;
+  background: #C52A14;
+  background: -moz-linear-gradient(top,#C52A14 0%,#AD291A 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#C52A14),color-stop(100%,#AD291A));
+  background: -webkit-linear-gradient(top,#C52A14 0%,#AD291A 100%);
+  background: -o-linear-gradient(top,#C52A14 0%,#AD291A 100%);
+  background: -ms-linear-gradient(top,#C52A14 0%,#AD291A 100%);
+  background: linear-gradient(top,#C52A14 0%,#AD291A 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#C52A14',endColorstr='#AD291A',GradientType=0);
+  color:#fff;
+  font-size: 0.8em;
+  line-height: 20px;
+
+}
+
+.navbar li a{
+  font-size: 1.1em;
+  text-decoration: none;
+  color: #FFFFFF;
+  display: block;
+  /*border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  */
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  float: left;
+  margin-right: -20px;
+  width: 100%;
+  padding: 8px 0;
+}
+ 
+.navbar li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: -moz-linear-gradient(top,#C52A14 0%,#e93c23 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#C52A14),color-stop(100%,#e93c23));
+  background: -webkit-linear-gradient(top,#C52A14 0%,#e93c23 100%);
+  background: -o-linear-gradient(top,#C52A14 0%,#e93c23 100%);
+  background: -ms-linear-gradient(top,#C52A14 0%,#e93c23 100%);
+  background: linear-gradient(top,#C52A14 0%,#e93c23 100%);
+}
+
+
+@-moz-keyframes dropHeader {
+    0% {
+        -moz-transform: translateY(-100px);
+    }
+    100% {
+        -moz-transform: translateY(0);
+    }
+}
+@-webkit-keyframes dropHeader {
+    0% {
+        -webkit-transform: translateY(-100px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+    }
+}
+@keyframes dropHeader {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+@-moz-keyframes dropHeader {
+    0% {
+        -moz-transform: translateY(-100px);
+    }
+    100% {
+        -moz-transform: translateY(0);
+    }
+}
+@-webkit-keyframes dropHeader {
+    0% {
+        -webkit-transform: translateY(-100px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+    }
+}
+@keyframes dropHeader {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*Separator */
+
+.or-spacer-vertical .mask {
+  overflow: hidden;
+  width: 20px;
+  height: 80px;
+}
+
+.or-spacer-vertical.right .mask:before {
+  content: '';
+  display: block;
+  margin-left: 20px;
+  width: 20px;
+  height: 100%;
+  border-radius: 12px / 125px;
+  box-shadow: 0 0 1px black;
+}
+
+.two {
+    
+  -webkit-box-shadow: -1px -1px 22px 0px rgba(197,42,20,1);
+-moz-box-shadow: -1px -1px 22px 0px rgba(197,42,20,1);
+box-shadow: -1px -1px 22px 0px rgba(197,42,20,1)    
+}
+/* List Style */
+
+.todo-list li {
+  position: relative;
+  font-size: 1.5em;
+  border-bottom: 1px solid #ededed;
+  background-color: #fff;
+   /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=86);
+
+  /* Netscape */
+  -moz-opacity: 0.86;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0.86;
+
+  /* Good browsers */
+  opacity: 0.86;
+}
+
+.todo-list li:hover{
+  background-color: #F6FBFF;
+}
+
+.todo-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -moz-animation-name: dropHeader;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: 0.3s;
+
+    -webkit-animation-name: dropHeader;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 0.3s;
+
+    animation-name: dropHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.3s;
+}
+
+
+.todo-list li.linew, .todo-list li.linot{
+  display: none;
+}
+  
+.todo-list li label{
+  width: 80%;
+  white-space: nowrap!important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.todo-list li label.done{
+   text-decoration:line-through;
+}
+
+.todo-list li label.lnew{
+  white-space: normal;
+  margin-left: 0;
+}
+
+
+.todo-list li input.input-task:focus{
+
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+
+.todo-list li input.input-task, .todo-list li input.edit-input{
+  border: none;
+  height: 32px;
+  color: #888;
+  width: 100%;
+  font-size: 1em;
+  background: rgba(0, 0, 0, 0.003);
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+.todo-list li input.edit-input {
+  display:none;
+  margin: 13px 15px 13px 25px;
+  width: 94%;
+}
+
+
+button, input[type="checkbox"], input[type="submit"], .todo-list li input.edit-input{
+  outline: none;
+}
+
+button, input[type="submit"] {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.todo-list li:last-child {
+  border-bottom: none;
+}
+
+.todo-list li.editing {
+  border-bottom: none;
+  padding: 0;
+}
+
+.todo-list li.editing .edit {
+  display: block;
+  width: 506px;
+  padding: 13px 17px 12px 17px;
+  margin: 0 0 0 43px;
+}
+
+.todo-list li.editing .view {
+  display: none;
+}
+
+
+.todo-list li .toggle {
+  text-align: center;
+  width: 40px;
+  /* auto, since non-WebKit browsers doesn't support input styling */
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  border: none; /* Mobile Safari */
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.todo-list li .toggle:after {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#ededed" stroke-width="3"/></svg>');
+}
+
+.todo-list li .toggle:checked:after {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#bddad5" stroke-width="3"/><path fill="#5dc2af" d="M72 25L42 71 27 56l-4 4 20 20 34-52z"/></svg>');
+}
+
+.todo-list li label {
+  text-align: left;
+  color: #888;
+  white-space: pre;
+  word-break: break-word;
+  padding: 15px 60px 15px 15px;
+  margin-left: 15px;
+  display: block;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+
+.todo-list li.completed label {
+  color: #d9d9d9;
+  text-decoration: line-through;
+}
+
+.todo-list li .adds {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  margin: auto 0;
+  font-size: 30px;
+  color: #af5b5e;
+  margin-bottom: 11px;
+  transition: color 0.2s ease-out;
+  
+}
+
+.todo-list li .destroy, .todo-list li .edit{
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  margin: auto 0;
+  font-size: 30px;
+  color: #cc9a9a;
+  margin-bottom: 11px;
+  transition: color 0.2s ease-out;
+  cursor: pointer;
+
+}
+
+.todo-list li .edit{
+  right: 40px;
+  font-size: 0.75em;
+}
+
+.todo-list li .destroy:hover, .todo-list li .edit:hover {
+  color: #af5b5e;
+}
+
+.todo-list li .adds:after {
+  content: '+';
+}
+  
+.todo-list li .destroy:after {
+  content: '×';
+}
+
+
+.todo-list li:hover .destroy, .todo-list li:hover .edit {
+  display: block;
+}
+
+.todo-list li .edit {
+  display: none;
+}
+
+.todo-list li.editing:last-child {
+  margin-bottom: -1px;
+}
+
+
+
+/* 4 Responsive Menu (480, 768, 992) */
+
+@media (min-width:992px){
+ /* .navbar li {
+      width: 150px;
+  }*/
+}
+
+@media(min-width:768px) and (max-width : 992px){
+  
+  .content{
+    width: 75%;
+  }
+}
+
+@media(min-width:480px) and (max-width : 768px){
+  .content{
+    width: 100%;
+    margin: 0;
+    font-size: .9em;
+  }
+
+  .todo-list li {
+
+  }
+
+  .todo-list li input.edit-input{
+      margin: 13px 0px 13px 29px;
+  }
+
+
+}
+
+@media(max-width:480px){
+  .content{
+    width: 100%;
+    margin: 0;
+    font-size: .7em;
+  }
+
+  .todo-list li {
+    
+  }
+
+  header{
+      height: 70px;
+  }
+
+  .vignette{
+    height: 34px;
+  }
+
+  .wrap{
+    background-color: #ddd;
+
+  }
+
+  .edit-input{
+
+  }
+
+  .or-spacer-vertical .mask{
+    height: 70px;
+  }
+
+  .todo-list li input.edit-input{
+      margin: 13px 0px 13px 23px;
+  }
+
+}
+
+
